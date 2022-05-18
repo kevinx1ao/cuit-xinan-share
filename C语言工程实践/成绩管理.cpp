@@ -38,7 +38,7 @@ void showstudent()
 {
 	void menu();
     int i;
-	printf(" \tĞÕÃû\tÑ§ºÅ\tÓïÎÄ\tÊıÑ§\tÓ¢Óï\t×Ü·Ö\n");
+	printf(" \tå§“å\tå­¦å·\tè¯­æ–‡\tæ•°å­¦\tè‹±è¯­\tæ€»åˆ†\n");
 	for(i=0;i<n;i++)
 	{
 		printf("\t%s\t%d\t%d\t%d\t%d\t%d\n",student[i].name,student[i].num,student[i].Chinese,student[i].Math,student[i].English,student[i].sum);
@@ -113,14 +113,14 @@ void searchnum(int number)
         else
         {
             escape = true;
-            printf("\tĞÕÃû\tÑ§ºÅ\tÓïÎÄ\tÊıÑ§\tÓ¢Óï\t×Ü·Ö\n");
+            printf("\tå§“å\tå­¦å·\tè¯­æ–‡\tæ•°å­¦\tè‹±è¯­\tæ€»åˆ†\n");
             printf("\t%s\t%d\t%d\t%d\t%d\t%d\n", student[mid].name, student[mid].num, student[mid].Chinese, student[mid].Math, student[mid].English, student[mid].sum);
             break;
         }
     }
     if(!escape)
     {
-        printf("\t²éÎŞ´ËÈË");
+        printf("\tæŸ¥æ— æ­¤äºº");
     }
     getch();
     menu();
@@ -134,14 +134,14 @@ void searchname()
 	{
 		if(strcmp(text,student[i].name)==0)
 		{
-			printf("\tĞÕÃû\tÑ§ºÅ\tÓïÎÄ\tÊıÑ§\tÓ¢Óï\t×Ü·Ö\n");
+			printf("\tå§“å\tå­¦å·\tè¯­æ–‡\tæ•°å­¦\tè‹±è¯­\tæ€»åˆ†\n");
             printf("\t%s\t%d\t%d\t%d\t%d\t%d\n", student[i].name, student[i].num, student[i].Chinese, student[i].Math, student[i].English, student[i].sum);
 			break;
 		}
 	}
 	if(i>=n)
 	{
-		printf("\t²éÎŞ´ËÈË\n");
+		printf("\tæŸ¥æ— æ­¤äºº\n");
 	}
     getch();
     menu();
@@ -153,7 +153,7 @@ void save()
     FILE *fp;
 	fp=fopen("4.txt","w");
 	int i;
-	fprintf(fp, "\tĞÕÃû\tÑ§ºÅ\tÓïÎÄ\tÊıÑ§\tÓ¢Óï\t×Ü·Ö\n");
+	fprintf(fp, "\tå§“å\tå­¦å·\tè¯­æ–‡\tæ•°å­¦\tè‹±è¯­\tæ€»åˆ†\n");
 	for(i=0;i<n;i++)
 	{
 		if(student[i].Chinese<60||student[i].Math<60||student[i].English<60)
@@ -163,9 +163,9 @@ void save()
 		}
 	}
 	printf("\n");
-	printf("©³©¥©¥©¥©¥©·\n");
-    printf("©§±£´æ³É¹¦©§\n");
-    printf("©»©¥©¥©¥©¥©¿\n");
+	printf("â”â”â”â”â”â”“\n");
+    printf("â”ƒä¿å­˜æˆåŠŸâ”ƒ\n");
+    printf("â”—â”â”â”â”â”›\n");
     getch();
     menu();
 }
@@ -174,24 +174,24 @@ void menu()
 {
     int choice;
     system("cls");
-    printf("                    ²Ëµ¥\n");
-    printf("©³©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©·\n");
-    printf("©§                 0.ÍË³ö                                     ©§\n");
-    printf("©§                 1.ÏÔÊ¾Ñ§ÉúĞÅÏ¢                             ©§\n");
-    printf("©§                 2.ÏÔÊ¾°´Ñ§ºÅÅÅĞòºóµÄÑ§ÉúĞÅÏ¢               ©§\n");
-    printf("©§                 3.ÏÔÊ¾°´×Ü·ÖÅÅĞòºóµÄÑ§ÉúĞÅÏ¢               ©§\n");
-    printf("©§                 4.°´Ñ§ºÅ²éÑ§Éú¸÷¿Æ·ÖÊıºÍ×Ü·Ö               ©§\n");
-    printf("©§                 5.°´ĞÕÃû²éÑ§Éú¸÷¿Æ·ÖÊıºÍ×Ü·Ö               ©§\n");
-    printf("©§                 6.³éÈ¡³öÈı¿Æ³É¼¨ÖĞÓĞ²¹¿¼µÄÑ§Éú²¢±£´æ       ©§\n");
-    printf("©»©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¥©¿\n");
-    printf("                    Ñ¡Ôñ´úÂë£¨0£¬1£¬2£¬3£¬4£¬5£¬6£©£º ");
+    printf("                    èœå•\n");
+    printf("â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”“\n");
+    printf("â”ƒ                 0.é€€å‡º                                     â”ƒ\n");
+    printf("â”ƒ                 1.æ˜¾ç¤ºå­¦ç”Ÿä¿¡æ¯                             â”ƒ\n");
+    printf("â”ƒ                 2.æ˜¾ç¤ºæŒ‰å­¦å·æ’åºåçš„å­¦ç”Ÿä¿¡æ¯               â”ƒ\n");
+    printf("â”ƒ                 3.æ˜¾ç¤ºæŒ‰æ€»åˆ†æ’åºåçš„å­¦ç”Ÿä¿¡æ¯               â”ƒ\n");
+    printf("â”ƒ                 4.æŒ‰å­¦å·æŸ¥å­¦ç”Ÿå„ç§‘åˆ†æ•°å’Œæ€»åˆ†               â”ƒ\n");
+    printf("â”ƒ                 5.æŒ‰å§“åæŸ¥å­¦ç”Ÿå„ç§‘åˆ†æ•°å’Œæ€»åˆ†               â”ƒ\n");
+    printf("â”ƒ                 6.æŠ½å–å‡ºä¸‰ç§‘æˆç»©ä¸­æœ‰è¡¥è€ƒçš„å­¦ç”Ÿå¹¶ä¿å­˜       â”ƒ\n");
+    printf("â”—â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”›\n");
+    printf("                    é€‰æ‹©ä»£ç ï¼ˆ0ï¼Œ1ï¼Œ2ï¼Œ3ï¼Œ4ï¼Œ5ï¼Œ6ï¼‰ï¼š ");
     scanf("%d", &choice);
     switch(choice)
     {
         case 0:
         {
             system("cls");
-            printf("Ğ»Ğ»Ê¹ÓÃ!\n");
+            printf("è°¢è°¢ä½¿ç”¨!\n");
             exit(0);
         }
         case 1:
@@ -214,14 +214,14 @@ void menu()
         {
             system("cls");
             int num;
-            printf("\tÇëÊäÈëÒª²éÕÒÑ§ÉúµÄÑ§ºÅ£º");
+            printf("\tè¯·è¾“å…¥è¦æŸ¥æ‰¾å­¦ç”Ÿçš„å­¦å·ï¼š");
             scanf("%d", &num);
             searchnum(num);
         }
         case 5:
         {
             system("cls");
-            printf("\tÇëÊäÈëÒª²éÕÒÑ§ÉúµÄĞÕÃû£º");
+            printf("\tè¯·è¾“å…¥è¦æŸ¥æ‰¾å­¦ç”Ÿçš„å§“åï¼š");
             scanf("%s", text);
             searchname();
         }
